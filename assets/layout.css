@@ -1,0 +1,404 @@
+/* ========== VARIAVEIS ========== */
+:root{
+    --font-size-title: 2.1rem;
+    --font-size-paragraph: 1.25rem;
+    --font-poppins: "Poppins", sans-serif;
+    --font-rubik: "Rubik", sans-serif;
+    --color-orange: #DC7000;
+}
+
+/* ----- IMPORTS FONTS ----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*  font-family: "Rubik", sans-serif;
+    font-family: "Poppins", sans-serif; */
+
+
+    /* ----- HEADER ----- */
+
+body{
+    background-color: #000000;
+}
+
+
+.header-content{
+    width: 100%;
+    height: 130px;
+    font-family: var(--font-poppins);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 9999999;
+}
+
+.header-content h2{
+    color: #fff;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-family: var(--font-poppins);
+}
+
+nav{
+    width: 100%;    
+    max-width: 656px;
+    z-index: 999999;
+}
+
+.header-content .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.8s, border 0.8s;
+}
+
+.menu a:hover{
+    color: #FA9021;
+}
+
+.header-btn{
+    padding: 10px 20px;
+    background-color: #FA9021;
+    border: 1px solid #FA9021;
+    border-radius: 6px;
+}
+
+.header-btn:hover{
+    background-color: transparent;
+}
+
+    /* ----- BANNER ----- */
+
+.section-geral{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.banner{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 125px;
+    margin-bottom: 132px;
+    display: flex;
+    position: relative;
+}
+
+.banner-txt{
+    width: 50%;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.banner-txt h3{
+    color: #E87D0E;
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-paragraph);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 155.2%;
+}
+
+.banner-txt h1{
+    color: #FFF;
+    font-family: var(--font-poppins);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 155.2%;
+    width: 60%;
+}
+
+.banner-txt p{
+    color: #FFF;
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-paragraph);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 200%;
+    width: 70%;
+}
+
+.banner-txt a{
+    width: 195px;
+    height: 53px;
+    border-radius: 40px;
+    background: linear-gradient(92deg, #FA8305 2.08%, #FB9E3C 117.25%);
+    color: #FFF;
+    border: 1px solid #FA8305;
+    font-family: "Poppins", sans-serif;
+    font-size: var(--font-size-paragraph);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 17px;
+}
+
+.banner-btn:hover{
+    color: #fff;
+    background: transparent;
+    border: 1px solid #FA8305;
+}
+
+.banner-img{
+    width: 50%;
+    height: 810px;
+    position: absolute;
+    top: -250px;
+    right: -30px;   
+}
+
+.banner-img-content{
+    background-image: url(../assets/img/joy_stick.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-img-logo img{
+    width: 100%;
+}
+
+.unity{
+    position: absolute;
+    top: 200px;
+    right: 750px;
+    max-width: 96px;
+}
+
+.cry{
+    position: absolute;
+    top: 5px;
+    right: 530px;
+    max-width: 96px;
+}
+
+.unreal{
+    position: absolute;
+    top: 25px;
+    right: 200px;
+    max-width: 96px;
+}
+
+/* ----- currently-trending ----- */
+
+.currently-txt{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.currently-txt h2{
+    color: #FFF;
+
+    font-family: "Rubik", sans-serif;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 187.5%;
+}
+
+.currently-txt a{
+    width: 139px;
+    height: 57px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.11); 
+    color: #FFF;
+
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 187.5%;
+}
+
+.currently-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 277px;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.currently-img1, 
+.currently-img2,
+.currently-img3,
+.currently-img4{
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.currently-txt-icon{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    gap: 10px;
+
+    font-family: var(--font-rubik);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 187.5%;
+}
+
+/* ========== SPIDER MAN ========== */
+
+.spider-man{
+    color: #fff;
+    width: 100%;
+}
+
+.spider-man h2{
+    text-align: center;
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-title);
+    font-weight: 600;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 67px;
+    line-height: 187.5%;
+}
+
+.spider-man-txt{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.spider-man-txt h3{
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-title);
+    font-weight: 600;
+}
+
+.spider-man-txt p{
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-paragraph);
+    margin-bottom: 46px;
+    line-height: 187.5%;
+}
+
+.spider-man-imgs{
+    position: relative;
+    width: 100%;
+    height: 462px;
+}
+
+.spider-man-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/spider-man.png);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.spider-man-img1{
+    background-image: url(img/ponts.png);
+    background-position: center center;
+    background-size: cover;
+    max-width: 196px;
+    height: 154px;
+    position: relative;
+    top: -525px;
+    right: -1100px;
+}
+
+/* ========= section-devices ========= */
+
+.container-background{
+    width: 100%;
+    background-image: url(img/devices-background.png);
+    background-size: cover;
+}
+
+.section-devices{
+    width: 100%;
+    color: #fff;
+    font-family: var(--font-poppins);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.devices-txt{
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.section-devices h2{
+    font-size: var(--font-size-title);
+    line-height: 187.5%;
+}
+
+.devices-txt p{
+    font-size: var(--font-size-paragraph);
+    font-weight: 300;
+    line-height: 187.5%;
+}
+
+.devices-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.devices-icon{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 62px;
+}
+
+.devices-grid1{
+    grid-column: 2 / 3;
+}
+
+.devices-grid2{
+    grid-column: 3 / 4;
+}
+
+.devices-icon img{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.devices-icon .fa-arrow-right{
+    color: var(--color-orange);
+    font-size: 21px;
+}
+
+/* ========= SECTION PROJECTS ========== */
+
+.projects-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
